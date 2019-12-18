@@ -1,0 +1,14 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "Guestbook app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladislav Pak <pak_v@auca.kg>",
+  "license": "MIT",
+  "dependencies": {
+    "pug": "^2.0.4"
+  }
+}

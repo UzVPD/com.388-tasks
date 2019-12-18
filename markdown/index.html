@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keyword" content="documentation, markdown">
+    <meta name="author" content="com388">
+    <title>Markdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- 
+                <a href="mailto:pak_v@auca.kg">contact me</a> -->
+                <ul>
+                    <li><a href="#heading">Heading</a></li>
+                    <li><a href="#text">Text Properties</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#quotes">Quotes</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                </ul>
+        </nav>
+    </header>
+    <articles class="general-info">
+        <h1>Markdown Language</h1>
+        <section class="general-info" id="overview">
+            <h2>Overview</h2>
+            <p>Markdown is a lightweight markup language with plain text formatting syntax. Its design allows it to be
+                converted
+                to many output formats, but the original tool by the same name only supports HTML.[8] Markdown is often
+                used
+                to
+                format readme files,
+                for writing messages in online discussion forums, and to create rich text using a plain text editor.</p>
+        </section>
+        <hr>
+        <section class="specific-info" id="heading">
+            <h2>Headings in Markdown</h2>
+            <p> To create heading in markdown laguage you should add <code>#</code> symbols in front of the heading
+                depending on
+                its level.</p>
+            <p>Examples: </p>
+            <code># This is heading 1 in Markdown <br> ### This is heading 2 in Markdown <br> ... <br> ###### This is
+                heading 6
+                in Markdown</code>
+            <p>After conversion to HTML: </p>
+            <h1>This is heading 1 in Markdow</h1>
+            <h2>This is heading 2 in Markdown</h2>
+            <p>...</p>
+            <h6>This is heading 6 in Markdown</h6>
+        </section>
+        <hr>
+        <section class="specific-info" id="text">
+            <h2>Strong/important text adn emphasize</h2>
+            <p>To emphasize or outline words as important you should use the <code>*</code> or <code>_</code> and
+                <code>**</code> symbols.</p>
+            <pre><code>
+*emphasize*
+_emphasize_
+**strong** 
+__strong text__
+            </code></pre>
+            <p>After conversion to HTML: </p>
+            <em>emphasize</em><br>
+            <em>emphasize</em><br>
+            <strong>strong text</strong><br>
+            <strong>strong text</strong><br>
+        </section>
+
+        <hr>
+        <section class="specific-info" id="links">
+            <h2>Links</h2>
+            <p>To create link in Markdown you should use the following syntax:</p>
+            <pre><code>[link text](http://exampe.com) &lt; http://exampe.com</code></pre>
+            <a href="http://exampe.com">link text</a>
+            <a href="http://exampe.com">http://exampe.com</a>
+        </section>
+        <hr>
+        <section class="specific-info" id="lists">
+            <h2>Lists</h2>
+            <h3>Unordered Lists</h3>
+            <p>In order to create an undordered list in Markdown you should add a <code>*</code> or <code>-</code>
+                symbols
+                in
+                front of your list items.</p>
+            <pre><code>* first item
+* second item
+* third item
+        
+- first item
+- second item
+- third item
+                </code></pre>
+            <ul>
+                <li>first item</li>
+                <li>second item</li>
+                <li>third item</li>
+            </ul>
+            <h3>Ordered list</h3>
+            <p>In order to create an undordered list in Markdown you should add numbering to your list items.</p>
+            <pre><code>1. first item
+2. second item
+3. third item
+        </code></pre>
+            <ol>
+                <li>first item</li>
+                <li>second item</li>
+                <li>third item</li>
+            </ol>
+            <h3>Definition Lists</h3>
+            <p>To create a definition list you should use the following syntax
+            </p>
+            <pre><code>term 1
+: definition 1</code></pre>
+            <dl>
+                <dt>term 1</dt>
+                <dd>definition 1</dd>
+            </dl>
+
+        </section>
+        <hr>
+        <section class="specific-info" id="quotes">
+            <h2>Quotes</h2>
+            <p>To create blockquotes in Markdown you should add <code>></code> in front of every line.
+            </p>
+            <pre><code>
+rds can be like X-rays, if you use
+em properly—they’ll go through 
+ything. You read and you’re pierced.
+            </code></pre>
+            <blockquote>
+                Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re
+                pierced.
+            </blockquote>
+        </section>
+        <hr>
+        <section class="specific-info" id="images">
+
+            <h2>Images</h2>
+            <p>in Markdown the syntax to add images is very similar to the syntax to create links.
+            </p>
+            <pre><code>![[alternative text]()</code></pre>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1200px-Markdown-mark.svg.png"
+                alt="markdown logotype" style="width: 10%">
+
+        </section>
+        <hr>
+        <section class="specific-info" id="tables">
+            <h2>Tables</h2>
+            <p>In order ot create a tabel you have to use the <code>|</code> character.</p>
+            <p>Example:</p>
+            <pre><code>| First cell|Second cell|Third cell|
+|-----------|-----------|----------|
+|First      |  Second   | Third    |
+|First      |  Second   | Third    |</code></pre>
+
+            <p>Will result in the following table:</p>
+            <table>
+                <tr>
+                    <th colspan="2">First cell</th>
+                    <!-- <th>First cell</th> -->
+                    <!-- <th>Second cell</th> -->
+                    <th>Third cell</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">First</td>
+                    <!-- <td>First</td> -->
+                    <td>Second</td>
+                    <td>Third</td>
+                </tr>
+                <tr>
+                    <td>First</td>
+                    <td>Fourth</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+
+    </articles>
+
+    <footer>
+        Copyright VPD 2019.
+    </footer>
+
+</body>
+
+</html>

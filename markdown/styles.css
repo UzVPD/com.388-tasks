@@ -1,0 +1,76 @@
+:root {
+     --base-color: rgb(100, 17, 148);
+}
+
+html {
+     font-family: 'Helvetica', 'Arial', sans-serif;
+     font-size: 18px;
+     background-color: var(--base-color);
+     color: whitesmoke;
+}
+
+nav {
+     text-align: center;
+}
+
+header nav li {
+     list-style: none;
+     display: inline;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+}
+
+a {
+     color: whitesmoke;
+}
+
+h1 {
+     font-size: 2rem;
+
+}
+
+articles>h1 {
+     text-align: center;
+}
+
+h2 {
+     font-size: 1.4rem;
+     margin: 0;
+}
+
+section {
+     background-color: rgb(76, 11, 114);
+     padding: 1em;
+     margin: 2em 10em;
+     border-radius: 2em 0;
+     border: 0.2em dotted rgb(178, 74, 256);
+     box-shadow: 0 0 1em 1em rgb(76, 11, 114);
+}
+
+section h2 {
+     background: linear-gradient(45deg, red, blue);
+     padding: 0.5em;
+     border-radius: 0.7em 0;
+}
+
+hr {
+     border-style: none;
+     border-top: 0.2em dotted rgb(178, 74, 256);
+     width: 10em;
+}
+
+footer {
+     text-align: center;
+     margin: 2rem;
+}
+
+table,
+td,
+th {
+     border: 1px solid black;
+     border-collapse: collapse;
+     padding: 4px;
+}

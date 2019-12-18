@@ -1,0 +1,8 @@
+html
+  head
+    title= title
+  body
+    h1= message
+    p  Not a correct name? Try again...
+    form(action="/enter", method="post")
+        input(type="text" name="name" placeholder="Enter your name")
